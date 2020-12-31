@@ -4,7 +4,6 @@ from paramiko.ssh_exception import SSHException
 from netmiko.ssh_exception import AuthenticationException
 from getpass import getpass
 import json 
-import csv 
 import time
 import datetime
 from tabulate import tabulate
