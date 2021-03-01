@@ -1,0 +1,18 @@
+
+To close the change 
+{"work_start":"2021-02-27 01:44:00",
+"work_end":"2021-02-27 01:54:00",
+"close_code":"successful",
+"close_notes":"completed successfully.",
+"state":"3"
+}
+
+To close the change task 
+{
+"change_task_type":"Review",
+"planned_start_date":"2021-02-27 01:44:00",
+"planned_end_date":"2021-02-27 01:54:00",
+"close_code":"successful",
+"close_notes":"completed successfully.",
+"state":"3"
+}

@@ -1,0 +1,18 @@
+! Generated config via Jinja2
+!
+{% if vlan_ids is not none -%}
+	{% for vlan_id, vlan_name in vlans -%} 
+vlan {{ vlan_id }}
+  name {{ vlan_name }}
+!
+	{% endfor %}
+{% endif %}
+{% if port_numbers is not none -%}
+	{% for port_number in port_numbers -%}
+interface {{ port_number }}
+  switchport trunk allowed vlan add {{ vlan_id_str }}
+!
+	{% endfor %}
+{% else %}
+    NONE
+{% endif %}

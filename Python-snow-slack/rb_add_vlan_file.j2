@@ -1,0 +1,17 @@
+! Generated rollback config via Jinja2
+!
+{% if vlan_ids is not none -%}
+	{% for vlan_id in vlan_ids -%} 
+no vlan {{ vlan_id }}
+!
+	{% endfor %}
+{% endif %}
+{% if port_numbers is not none -%}
+	{% for port_number in port_numbers -%}
+interface {{ port_number }}
+  switchport trunk allowed vlan remove {{ vlan_id_str }}
+!
+	{% endfor %}
+{% else %}
+    NONE
+{% endif %}
