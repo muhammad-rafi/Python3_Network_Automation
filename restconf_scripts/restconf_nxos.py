@@ -13,6 +13,7 @@ def resconf_get_nxos(host, username, password, path, port=443):
          }
       
       url = f"https://{host}:{port}/restconf/data/{path}"
+
       response = requests.get(url, 
                            auth=(username,password), 
                            headers=headers,
@@ -104,7 +105,7 @@ if __name__ == '__main__':
                                  method='PUT')
 
    # print the output of the request's response
-   print(config)
+   # print(config)
 
    # Get the updated configuration after the above change
    print(resconf_get_nxos(**device))

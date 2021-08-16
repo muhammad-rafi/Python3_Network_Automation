@@ -2,3 +2,4 @@ colorama==0.4.3
 netmiko==3.3.2
 tabulate==0.8.7
 termcolor==1.1.0
+rich==10.1.0
