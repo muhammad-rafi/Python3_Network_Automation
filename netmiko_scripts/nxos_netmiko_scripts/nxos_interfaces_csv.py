@@ -1,7 +1,8 @@
 from netmiko import ConnectHandler
-from netmiko.ssh_exception import NetMikoTimeoutException
+from netmiko.exceptions import NetMikoTimeoutException
+from netmiko.exceptions import AuthenticationException
+from netmiko.exceptions import SSHException
 from paramiko.ssh_exception import SSHException
-from netmiko.ssh_exception import AuthenticationException
 from getpass import getpass
 from termcolor import colored
 from colorama import Fore, Style, init
